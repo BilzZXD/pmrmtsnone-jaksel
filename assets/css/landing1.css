@@ -1,0 +1,376 @@
+/* ======================================================
+                    SECTION I & II
+========================================================*/
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.lg\:flex-row {
+  flex-direction: row;
+}
+
+.lg\:w-2\/3 {
+  width: 66.6667%;
+}
+
+.lg\:w-1\/3 {
+  width: 33.3333%;
+}
+
+.lg\:pl-8 {
+  padding-left: 2rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.text-4xl {
+  font-size: 2.5rem; /* Ukuran font lebih besar untuk judul utama */
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text-zinc-500 {
+  color: #737373;
+}
+
+.bg-green {
+  background-color: #166ca2;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.p-6 {
+  padding: 1.5rem; /* Perbesar padding */
+}
+
+.rounded {
+  border-radius: 0.375rem;
+}
+
+.text-3xl {
+  font-size: 2rem; /* Perbesar ukuran font untuk subjudul */
+}
+
+.news-list {
+  list-style: none;
+  padding: 0;
+}
+
+.news-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem; /* Perbesar margin bawah untuk spasi */
+}
+
+.news-image {
+  width: 120px; /* Perbesar lebar gambar */
+  height: 80px; /* Perbesar tinggi gambar */
+  object-fit: cover;
+  margin-right: 1rem;
+  border-radius: 8px;
+}
+
+.news-title {
+  font-size: 1.5rem; /* Perbesar ukuran font untuk judul berita */
+  font-weight: bold;
+}
+
+.image-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.leading-relaxed {
+  line-height: 1.75;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+/* ======================================================
+                       NAVBAR PMR
+========================================================*/
+
+ /* Penambahan margin top pada elemen di bawah navbar */
+ .content {
+   margin-top: 80px; /* Sesuaikan dengan tinggi navbar */
+ }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2395d7; /* Atur warna latar belakang navbar sesuai kebutuhan */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Pastikan navbar berada di atas konten lain */
+}
+.logo {
+  height: 50px;
+  margin-right: 20px; /* Jarak antara logo dan daftar menu */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  margin-right: 25px; /* Tambahkan margin kanan pada daftar menu */
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffe5e5; /* Sesuaikan warna teks dengan latar belakang navbar */
+  font-weight: bold;
+  padding: 8px 4px; /* Sesuaikan dengan kebutuhan */
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 16px; /* Sesuaikan dengan kebutuhan */
+}
+
+nav a:hover {
+  background-color: #289bcc; /* Sesuaikan dengan warna latar belakang navbar */
+  color: #d6d6d6; /* Sesuaikan dengan warna teks yang kontras */
+}
+
+
+/* Aturan khusus untuk menu terakhir */
+nav ul li:last-child a {
+  padding-right: 20px; /* Tambahkan padding di sisi kanan */
+}
+
+/* ======================================================
+                    FOOTER PMR
+========================================================*/
+/* ======================================================
+                    FOOTER PMR
+========================================================*/
+.footer {
+  background-color: #4e8aca;
+  color: white;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.wave-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.wave {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: -7px; /* Agar gelombang benar-benar menyatu dengan footer */
+}
+
+.footer-container {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-logo h2 {
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 28px;
+  text-align: center; /* Supaya terlihat rapi di mobile */
+}
+
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+  text-align: center; /* Membuat social media berada di tengah pada mobile */
+}
+
+.footer-social ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer-social ul li a {
+  color: #a81f1f;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.footer-social ul li a:hover {
+  color: #3498db;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  margin-top: 0;
+  text-align: center; /* Supaya kontak berada di tengah pada mobile */
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  padding: 10px 0;
+  border-top: 1px solid #bbb;
+  text-align: center;
+}
+
+.footer-heading {
+  font-family: 'Lexend', sans-serif; /* Mengganti dengan font Lexend */
+  font-size: 50px; /* Membuat font lebih besar untuk kesan premium */
+  color: #d02525; /* Warna premium */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan untuk efek 3D */
+  letter-spacing: 2px; /* Memberikan jarak antar huruf untuk kesan lebih rapi */
+  margin: 20px 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Responsive Design */
+
+/* Untuk layar di bawah 768px (mobile) */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .footer-contact p {
+    font-size: 13px;
+  }
+
+  .footer-heading {
+    font-size: 28px;
+    margin: 15px 0;
+  }
+}
+
+/* Untuk layar di atas 768px (tablet dan PC) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-heading {
+    font-size: 32px;
+  }
+}
+
+/* Untuk layar di atas 1024px (desktop dan laptop) */
+@media (min-width: 1025px) {
+  .footer-container {
+    padding: 60px 40px;
+  }
+
+  .footer-heading {
+    font-size: 36px;
+  }
+}
+
+/* ======================================================
+                          SETTING
+  ========================================================*/
+
+}/* Untuk scrollbar horizontal di seluruh halaman */
+::-webkit-scrollbar {
+  height: 2px; /* Tinggi scrollbar */
+}
+
+/* Untuk track (jalur) scrollbar horizontal */
+::-webkit-scrollbar-track-piece:end {
+  background: #ffffff; /* Warna latar belakang track */
+}
+
+/* Untuk thumb (pemegang) scrollbar horizontal */
+::-webkit-scrollbar-thumb:end {
+  background: #ffffff; /* Warna thumb scrollbar */
+}
+
+/* Untuk thumb saat dihover scrollbar horizontal */
+::-webkit-scrollbar-thumb:end:hover {
+  background: #ffffff; /* Warna thumb scrollbar saat dihover */
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* ======================================================
+                  RESPONSIVE DEVICE
+========================================================*/
+
+/* Stil untuk perangkat dengan lebar layar kurang dari 768px (misalnya, tablet) */
+@media (max-width: 768px) {
+  /* Tambahkan aturan CSS untuk tata letak responsif di sini */
+}
+
+/* Stil untuk perangkat dengan lebar layar kurang dari 576px (misalnya, smartphone) */
+@media (max-width: 576px) {
+  /* Tambahkan aturan CSS untuk tata letak responsif di sini */
+}
